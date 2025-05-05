@@ -1305,7 +1305,7 @@
 
                 if (error) {
                     if (error.code === 'PGRST116') {
-                         showMessage(studentLoginError, 'NISN tidak ditemukan.', 'error');
+                         showMessage(studentLoginError, '<br>Akses Link Kelulusan Mengalami Kendala</br><br>Silahkan Menghubungi Pihak Sekolah Bersama Orang Tua/Wali</br>.', 'error');
                     } else {
                         console.error("Student lookup error:", error);
                         showMessage(studentLoginError, `Gagal mencari data: ${error.message}`, 'error');
