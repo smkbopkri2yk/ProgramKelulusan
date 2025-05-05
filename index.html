@@ -1322,7 +1322,7 @@
                 let iconTextColor = '';
 
                 if (foundStudent.is_active === false) {
-                    messageText = `Mohon Maaf (${safeNama} - ${foundStudent.nisn}),<br>Status kelulusan Anda tidak dapat ditampilkan saat ini.<br>Silakan hubungi pihak sekolah bersama Orang Tua/Wali.`;
+                    messageText = `Mohon Maaf (${safeNama} - ${foundStudent.nisn}),<br>NISN Anda tidak dapat diakses saat ini.<br>Silakan hubungi pihak sekolah bersama Orang Tua/Wali.`;
                     statusClass = 'dinonaktifkan'; iconClass = 'fa-user-lock'; iconBgColor = 'bg-blue-100'; iconTextColor = 'text-blue-600';
                 } else if (foundStudent.status === 'Lulus') {
                     messageText = `Selamat (${safeNama} - ${foundStudent.nisn}),<br>Anda dinyatakan <strong>LULUS</strong> dari SMK BOPKRI 2 Yogyakarta.`;
